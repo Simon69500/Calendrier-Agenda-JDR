@@ -1,0 +1,20 @@
+.contenair-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: #E0D9D8 ;
+
+    .menuBurger {
+        width: 30%;
+    }
+
+    .title-header {
+        font-size: large;
+    }
+
+    .menuUser {
+        width: 30%;
+    }
+}

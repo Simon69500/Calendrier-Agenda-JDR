@@ -1,0 +1,16 @@
+.contenair-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #E0D9D8 ;
+
+    width: 100%;
+    height: 20%;
+    margin: 0;
+
+    .card-footer {
+        text-align: center;
+    }
+}
