@@ -1,21 +1,42 @@
-
-// Custom Theming for Angular Material
-// For more information: https://material.angular.io/guide/theming
 @use '@angular/material' as mat;
 
+@use './styles/colors.scss';
+@use './styles/fonts.scss';
+
 html {
+
+  background-color: colors.$backgroundColor-1;
+
   @include mat.theme((
     color: (
       theme-type: light,
       primary: mat.$azure-palette,
       tertiary: mat.$blue-palette,
     ),
-    typography: Roboto,
+    typography: Montserrat,
     density: 0,
   ));
+
+  h1, h2 {
+    @include fonts.font(title);
+    color: colors.$textColor-2;
+  }
+  p, li, span, small {
+    @include fonts.font(text);
+    color: colors.$textColor-2;
+  }
+  h3, h4, h5 {
+    @include fonts.font(other);
+    color: colors.$textColor-2;
+  }
+
+
 }/* You can add global styles to this file, and also import other style files */
+
 body {
     margin: 0;
+
 }
+
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: EB Garamond , serif; }

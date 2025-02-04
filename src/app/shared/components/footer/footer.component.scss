@@ -1,16 +1,76 @@
+@use '@styles/colors.scss';
+@use '@styles/fonts.scss';
+
 .contenair-footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    background-color: #E0D9D8 ;
+    background-color: colors.$elementColor-1 ;
 
     width: 100%;
-    height: 20%;
+    height:100%;
     margin: 0;
 
-    .card-footer {
-        text-align: center;
+  .contenairCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+
+    .title-card {
+      font-size: x-small;
+      margin: 0;
+      padding: 10px 0;
+    }
+
+    .text-card {
+      font-size: xx-small;
+      margin: 0;
+      padding: 5px 0;
+      text-decoration: none;
+      color: colors.$textColor-2;
+    }
+
+    .cardLegal {
+      text-align: center;
+      width: 60%;
+      height: 100%;
+    }
+
+    .cardContact {
+      text-align: center;
+      width: 60%;
+      height: 100%;
+    }
+  }
+    .cardIcon {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+
+      width: 30%;
+      height: 30%;
+
+
+      img {
+        height: 24px;
+        width: 24px;
+        padding: 0;
+      }
+    }
+
+    .cardAcala {
+      text-align: center;
+      font-size: x-small;
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding:5px;
     }
 }

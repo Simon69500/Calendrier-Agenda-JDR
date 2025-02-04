@@ -1,0 +1,43 @@
+@use '@styles/colors.scss';
+@use '@styles/fonts.scss';
+
+::ng-deep .titlePrincipal-auth {
+  text-align: center;
+  font-family: fonts.$fontTitle;
+  color: colors.$textColor-2;
+  background-color: colors.$backgroundColor-3;
+}
+
+::ng-deep .contenair-auth {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  background-color: colors.$backgroundColor-3;
+
+  ::ng-deep .form-auth {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+
+    ::ng-deep .cardInput-auth {
+      background-color: colors.$backgroundColor-2;
+      border: 2px colors.$bordelColor-3;
+    }
+
+    ::ng-deep .btnSubmit-auth {
+      width: 100%;
+      font-family: fonts.$fontText;
+    }
+  }
+
+  ::ng-deep .btnChange-auth {
+    text-align: center;
+    font-family: fonts.$fontText;
+  }
+
+  .mat-form-field {
+    width: 100%;
+  }
+}

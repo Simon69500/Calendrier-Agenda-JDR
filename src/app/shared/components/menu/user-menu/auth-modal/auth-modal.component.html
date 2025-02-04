@@ -1,0 +1,24 @@
+<h2 class="titlePrincipal-auth" mat-dialog-title>{{ isLoginMode ? 'Connexion' : 'Inscription'}}</h2>
+
+<div class="contenair-auth" mat-dialog-content>
+  <form class="form-auth" [formGroup]="authForm" (ngSubmit)="onSubmit()">
+
+    <mat-form-field class="cardInput-auth">
+      <input matInput placeholder="Email" formControlName="email" type="email" required />
+      <mat-error *ngIf="authForm.controls['email'].invalid">Veuillez entrer un email valide.</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="cardInput-auth">
+      <input matInput placeholder="Mot de passe" formControlName="password" type="password" required />
+      <mat-error *ngIf="authForm.controls['password'].invalid">Le mot de passe est requis et doit faire au moins 6 caractères.</mat-error>
+    </mat-form-field>
+
+    <button class="btnSubmit-auth" mat-button type="submit" [disabled]="authForm.invalid">
+      {{ isLoginMode ? "Se connecter" : "S'inscrire" }}
+    </button>
+  </form>
+
+  <button class="btnChange-auth" mat-button (click)="onSwitchMode()">
+    {{ isLoginMode ? "Vous n'avez pas de compte ? Inscrivez-vous" : "Vous avez déjà un compte ? Connectez-vous"}}
+  </button>
+</div>

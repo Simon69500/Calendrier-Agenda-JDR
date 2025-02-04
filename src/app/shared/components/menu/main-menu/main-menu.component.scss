@@ -1,5 +1,40 @@
-.contenair-menuBurger {
-    .card-menuBurger {
+@use '@styles/colors.scss';
+@use '@styles/fonts.scss';
 
-    }
+// Personnalisation du menu burger
+::ng-deep .cardBurger {
+  background-color: colors.$elementColor-1;
+
+  ::ng-deep .btnBurger {
+    color: colors.$textColor-2;
+  }
+
+  ::ng-deep .btnBurger mat-icon {
+    color: colors.$solidColor-1;
+  }
+
+  ::ng-deep .btnBurger:hover {
+    background-color: colors.$elementColor-1;
+    color: colors.$solidColor-2;
+  }
+}
+
+::ng-deep button.mat-icon-button {
+  background-color: colors.$elementColor-1;
+  color: colors.$solidColor-1;
+}
+
+::ng-deep .mat-menu-panel {
+  background-color: colors.$elementColor-1;
+  border: 1px solid colors.$bordelColor-1;
+}
+
+::ng-deep.mat-menu-item {
+  color: colors.$textColor-2;
+  background-color: colors.$elementColor-2;
+
+  &:hover {
+    background-color: colors.$elementColor-3;
+    color: colors.$solidColor-1;
+  }
 }

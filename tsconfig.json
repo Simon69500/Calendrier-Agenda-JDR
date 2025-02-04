@@ -13,10 +13,16 @@
     "isolatedModules": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "importHelpers": true,
     "target": "ES2022",
-    "module": "ES2022"
+    "module": "ES2022",
+    "allowJs": true,
+    "baseUrl": "./",
+    "paths": {
+      "@styles/*": ["src/styles/*"]
+    },
+
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

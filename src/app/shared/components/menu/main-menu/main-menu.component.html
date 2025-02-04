@@ -1,9 +1,29 @@
-<div class="contenair-menuBurger">
-   <mat-icon [matMenuTriggerFor]="menu"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></mat-icon>
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item><a routerLink="/">Accueil </a></button>
-      <button mat-menu-item><a routerLink="/">Créer une Campagne</a></button>
-      <button mat-menu-item><a routerLink="/">Tableau de bord</a></button>
-      <button mat-menu-item><a routerLink="/">Contact</a></button>
-    </mat-menu>
-</div>
+<!-- Icone du menu burger -->
+<button mat-icon-button [matMenuTriggerFor]="menu">
+  <mat-icon>menu</mat-icon> <!-- Icône burger -->
+</button>
+
+<!-- Menu déroulant -->
+<mat-menu #menu="matMenu" class="cardBurger">
+
+  <button mat-menu-item routerLink="/" class="btnBurger">
+    <mat-icon class="iconBurger"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#152223"><path d="M40-120v-480h80v80h80v-320h80v80h80v-80h80v80h80v-80h80v80h80v-80h80v320h80v-80h80v480H560v-120q0-33-23.5-56.5T480-320q-33 0-56.5 23.5T400-240v120H40Zm80-80h200v-40q0-66 47-113t113-47q66 0 113 47t47 113v40h200v-240H680v-240H280v240H120v240Zm240-280h80v-120h-80v120Zm160 0h80v-120h-80v120Zm-40 40Z"/></svg></mat-icon>
+    Accueil
+  </button>
+
+  <button mat-menu-item routerLink="/createCampaign" class="btnBurger">
+    <mat-icon class="iconBurger"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#152223"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h240v80H200v560h560v-240h80v240q0 33-23.5 56.5T760-120H200Zm440-400v-120H520v-80h120v-120h80v120h120v80H720v120h-80Z"/></svg></mat-icon>
+   Créer une campagne
+  </button>
+
+  <button mat-menu-item routerLink="/dashboard-campaign" class="btnBurger">
+    <mat-icon class="iconBurger"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#152223"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h240v-560H200v560Zm320 0h240v-280H520v280Zm0-360h240v-200H520v200Z"/></svg></mat-icon>
+    Tableau de bord
+  </button>
+
+  <button mat-menu-item routerLink="/contact" class="btnBurger">
+    <mat-icon class="iconBurger"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#152223"><path d="m480-80-10-120h-10q-142 0-241-99t-99-241q0-142 99-241t241-99q71 0 132.5 26.5t108 73q46.5 46.5 73 108T800-540q0 75-24.5 144t-67 128q-42.5 59-101 107T480-80Zm80-146q71-60 115.5-140.5T720-540q0-109-75.5-184.5T460-800q-109 0-184.5 75.5T200-540q0 109 75.5 184.5T460-280h100v54Zm-101-95q17 0 29-12t12-29q0-17-12-29t-29-12q-17 0-29 12t-12 29q0 17 12 29t29 12Zm-29-127h60q0-30 6-42t38-44q18-18 30-39t12-45q0-51-34.5-76.5T460-720q-44 0-74 24.5T344-636l56 22q5-17 19-33.5t41-16.5q27 0 40.5 15t13.5 33q0 17-10 30.5T480-558q-35 30-42.5 47.5T430-448Zm30-65Z"/></svg></mat-icon>
+    Contact
+  </button>
+
+</mat-menu>

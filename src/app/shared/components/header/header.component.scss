@@ -1,10 +1,12 @@
+@use "../../../../styles/colors.scss";
+
 .contenair-header {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 
-    background-color: #E0D9D8 ;
+    background-color: colors.$elementColor-1;
 
     .menuBurger {
         width: 30%;

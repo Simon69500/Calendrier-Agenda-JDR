@@ -1,7 +1,29 @@
-<footer class="contenair-footer">
-    <div class="card-footer">
-        <p >icone sociaux</p>
-        <p>2025 - Acala'Corp</p>
-        <p>Thermes et Conditions - Privacy and Cookies Policy</p>
+<footer>
+    <div class="contenair-footer">
+
+        <div class="contenairCards">
+
+          <div class="cardContact">
+            <h5 class="title-card">Acala'Corp</h5>
+            <p class="text-card"> +33 6 65 67 97 70</p>
+            <p class="text-card"> support.acalacorp.com</p>
+            <p class="text-card"> A propos</p>
+          </div>
+
+          <div class="cardLegal">
+            <h5 class="title-card">Autres</h5>
+            <a routerLink="/cgu" class="text-card">CGU</a> <br/>
+            <a routerLink="/mention-legal" class="text-card">Mentions légales</a><br/>
+            <a routerLink="/cookies" class="text-card">Confidentialité et Cookies</a>
+          </div>
+
+          <div class="cardIcon">
+            <img *ngFor="let icone of icones" [src]="'assets/icon/' + icone.path" [alt]="icone.name">
+          </div>
+
+        </div>
+
+
+        <p class="cardAcala">&copy; 2025 Acala'Corp. Tous droits réservés.</p>
     </div>
 </footer>

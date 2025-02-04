@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+// Title principal
+$fontTitle: 'Cinzel', serif ;
+
+// Sous-title and buttons
+$fontOther: 'Montserrat', sans-serif ;
+
+// Text principal
+$fontText: 'EB Garamond', serif ;
+
+
+// Mixin - Typographie
+
+@mixin font($font) {
+  @if $font == title {
+    font-family: $fontTitle;
+  }
+  @else if $font == text {
+    font-family: $fontText ;
+  }
+  @else if $font == other {
+    font-family: $fontOther;
+  }
+  @else {
+    font-family: $fontOther;
+  }
+}
+
+// Classe typhographie
+
+.title {
+  @include font(title);
+}
+
+.text {
+  @include font(text);
+}
+
+.other {
+  @include font(other);
+}
