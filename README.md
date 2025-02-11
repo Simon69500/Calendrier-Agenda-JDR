@@ -1,59 +1,65 @@
-# CalendrierAgenda
+# 📅 Calendrier & Agenda JDR 🎲 (🚧 En cours de développement 🚧)
+![Status](https://img.shields.io/badge/Status-En%20cours%20de%20développement-orange)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.4.
 
-## Development server
+**Calendrier & Agenda JDR** est une application conçue pour aider les **Maîtres du Jeu (MJ)** et les **joueurs de jeux de rôle (JDR)** à organiser et gérer leurs campagnes de manière efficace. Grâce à une interface intuitive et un calendrier interactif, il permet de planifier des sessions, suivre la progression des parties et faciliter la communication entre les joueurs.
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
-```
+## 📌 Contexte du projet  
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Ce projet est développé dans le cadre de l'obtention du titre **RNCP 5 "Développeur Web et Mobile - Full Stack"**.  
+L’application cible les amateurs de **Donjon & Dragon (D&D)**, leur offrant une solution numérique moderne pour la gestion des campagnes et sessions de jeu.
 
-## Code scaffolding
+🔹 **Objectif** :  
+Fournir un outil numérique **pratique et intuitif** pour la gestion des campagnes, avec des fonctionnalités adaptées aux besoins des joueurs et des maîtres du jeu.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+---
 
-```bash
-ng generate component component-name
-```
+## 🎨 Maquettes & Cahier des Charges  
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+📄 **Cahier des charges** : [Voir le document](A venir)  
+🎨 **Maquettes Figma** : [Voir les maquettes][(lien-figma) ](https://www.figma.com/community/file/1471108066721575588) 
 
-```bash
-ng generate --help
-```
+![image](https://github.com/user-attachments/assets/717cca38-7bd6-4d4c-81d1-ebd9d5e59664)
 
-## Building
+---
 
-To build the project run:
+## 🛠️ Technologies Utilisées  
 
-```bash
-ng build
-```
+- **Angular 19** - Framework moderne pour le développement frontend  
+- **SCSS** - Pour une stylisation avancée et modulaire  
+- **Angular Material** - Composants UI élégants et responsifs  
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+## ⚙️ Fonctionnalités Principales  
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+### 🏰 **Gestion des campagnes**  
+✔️ Création de campagnes avec un **nom, description et date**  
+✔️ Suivi des campagnes en cours et terminées  
+✔️ Gestion des sessions : **planification et suivi des joueurs**  
+✔️ Ajout de **résumés et notes** après chaque session  
 
-```bash
-ng test
-```
+### 📅 **Calendrier partagé**  
+✔️ Affichage des événements sous **vue mensuelle/hebdomadaire**  
+✔️ **Notifications** automatiques pour les sessions à venir  
+✔️ Ajout de **notes et résumés** pour chaque événement  
 
-## Running end-to-end tests
+### 🎨 **Interface utilisateur dynamique**  
+✔️ **Responsive** (PC, tablette, mobile)  
+✔️ **Navigation fluide** avec **menu latéral et modals interactifs**  
+✔️ **Feedback visuel** : confirmation des actions, erreurs, animations  
 
-For end-to-end (e2e) testing, run:
+### ✉️ **Formulaires interactifs**  
+✔️ **Formulaire de contact** avec validation des champs  
+✔️ **Formulaire de connexion/inscription** sécurisé  
+✔️ Cryptage des **mots de passe** pour protéger les données des utilisateurs  
 
-```bash
-ng e2e
-```
+---
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## 🚀 Installation & Exécution  
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### 📞 Contact
+📧 Email : simonsola67@gmail.com
+🔗 LinkedIn : Simon Badin
