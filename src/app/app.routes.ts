@@ -7,6 +7,7 @@ import { FormContactComponent } from './features/form-contact/form-contact.compo
 import { CGUComponent } from './shared/components/footer/Mention/cgu/cgu.component';
 import { CookiesComponent } from './shared/components/footer/Mention/cookies/cookies.component';
 import { MentionLegalComponent } from './shared/components/footer/Mention/mention-legal/mention-legal.component';
+import { UserCompteComponent } from './shared/components/menu/user-menu/user-compte/user-compte.component';
 
 export const routes: Routes = [
     // Routes Menu
@@ -19,4 +20,7 @@ export const routes: Routes = [
     { path: 'cgu', component: CGUComponent},
     { path: 'cookies', component: CookiesComponent},
     { path: 'mention-legal', component: MentionLegalComponent},
+
+    //Routes Divers
+    { path: 'user', component: UserCompteComponent}
 ];

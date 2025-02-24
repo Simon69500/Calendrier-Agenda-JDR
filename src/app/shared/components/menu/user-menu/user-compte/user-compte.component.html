@@ -1,0 +1,93 @@
+<div class="account-container">
+  <h1>Mon Compte</h1>
+
+  <!-- Mode affichage -->
+  <div *ngIf="!isEditing" class="account-info">
+
+    <img *ngIf="user.avatar" [src]="user.avatar" alt="Aperçu de l'avatar" style="width: 200px; border-radius: 50%; object-fit: cover; margin-top: 10px; border: 2px solid #8F9596;">
+
+   <div class="cardUser">
+
+    <h2>Utilisateur</h2>
+
+    <div class="account-field">
+      <label>Pseudo :</label>
+      <span>{{ user.pseudo }}</span>
+    </div>
+
+    <div class="account-field">
+      <label>Dicton :</label>
+      <span>{{ user.dicton }}</span>
+    </div>
+
+    <div class="account-field">
+      <label>Classe :</label>
+      <span>{{ user.classe }}</span>
+    </div>
+
+  </div>
+
+  <div class="cardUser">
+
+    <h2>Mes informations</h2>
+
+    <div class="account-field">
+      <label>Email :</label>
+      <span>{{ user.email }}</span>
+    </div>
+
+    <div class="account-field">
+      <label>Téléphone :</label>
+      <span>{{ user.telephone }}</span>
+    </div>
+
+  </div>
+
+    <!-- Bouton Modifier (ne doit pas être à l'intérieur d'un autre *ngIf) -->
+    <button class="edit-btn" (click)="isEditing = true">Modifier</button>
+
+  </div>
+
+  <!-- Mode édition -->
+  <div *ngIf="isEditing" class="account-form">
+    <form (ngSubmit)="saveChanges()">
+
+      <div class="form-group">
+        <label for="avatar">Changer l’image de profil :</label>
+        <input type="file" id="avatar" (change)="onFileSelected($event)">
+      </div>
+
+      <div class="form-group">
+        <label for="pseudo">Pseudo :</label>
+        <input type="text" id="pseudo" [(ngModel)]="user.pseudo" name="pseudo">
+      </div>
+
+      <div class="form-group">
+        <label for="dicton">Dicton :</label>
+        <input type="text" id="dicton" [(ngModel)]="user.dicton" name="dicton">
+      </div>
+
+      <div class="form-group">
+        <label for="classe">Classe :</label>
+        <select name="classe" id="classe" [(ngModel)]="user.classe">
+          <option *ngFor="let classe of classeUser" [value]="classe">
+            {{classe}}
+          </option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email :</label>
+        <input type="email" id="email" [(ngModel)]="user.email" name="email">
+      </div>
+
+      <div class="form-group">
+        <label for="telephone">Téléphone :</label>
+        <input type="text" id="telephone" [(ngModel)]="user.telephone" name="telephone">
+      </div>
+
+      <button type="submit" class="save-btn">Sauvegarder</button>
+      <button type="button" class="cancel-btn" (click)="cancelEdit()">Annuler</button>
+    </form>
+  </div>
+</div>

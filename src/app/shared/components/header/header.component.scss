@@ -1,4 +1,4 @@
-@use "../../../../styles/colors.scss";
+@use "@styles/colors.scss";
 
 .contenair-header {
     display: flex;
@@ -7,6 +7,8 @@
     align-items: center;
 
     background-color: colors.$elementColor-1;
+
+    width: 100%;
 
     .menuBurger {
         width: 30%;

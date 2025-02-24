@@ -20,6 +20,7 @@ html {
   h1, h2 {
     @include fonts.font(title);
     color: colors.$textColor-2;
+    text-align: center
   }
   p, li, span, small {
     @include fonts.font(text);

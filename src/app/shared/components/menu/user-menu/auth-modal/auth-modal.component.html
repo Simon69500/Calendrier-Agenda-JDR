@@ -13,9 +13,10 @@
       <mat-error *ngIf="authForm.controls['password'].invalid">Le mot de passe est requis et doit faire au moins 6 caractères.</mat-error>
     </mat-form-field>
 
-    <button class="btnSubmit-auth" mat-button type="submit" [disabled]="authForm.invalid">
-      {{ isLoginMode ? "Se connecter" : "S'inscrire" }}
-    </button>
+  <button class="btnSubmit-auth" mat-button type="submit" [disabled]="authForm.invalid">
+    {{ isLoginMode ? "Se connecter" : "S'inscrire" }}
+  </button>
+
   </form>
 
   <button class="btnChange-auth" mat-button (click)="onSwitchMode()">

@@ -1,0 +1,102 @@
+@use '@styles/colors.scss';
+@use '@styles/fonts.scss';
+
+.account-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  height: 100%;
+  margin: auto;
+
+  .account-info, .account-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 80%;
+
+    .cardUser {
+      border: 1px solid #535F5F;
+      border-radius: 15px;
+      padding: 10px;
+      background-color: colors.$backgroundColor-3;
+      width: 100%;
+
+    }
+
+    .account-field {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+
+    margin-bottom: 15px;
+
+      label {
+        font-weight: 400;
+        font-size: large;
+        font-family: fonts.$fontOther;
+        display: block;
+      }
+
+      span {
+        font-family: fonts.$fontText;
+        font-size: large;
+        font-weight: 450;
+        padding-left: 10px;
+      }
+    }
+  }
+
+
+  .edit-btn, .save-btn, .cancel-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .edit-btn {
+    background-color: #CCD1D1;
+    color: #152223 ;
+    border: 1px solid #AFB5B5 ;
+    border-radius: 30px;
+    width: 50%;
+  }
+
+  .save-btn {
+    background-color: #B9BEBF;
+    color: #152223 ;
+    border: 1px solid #8F9596 ;
+    border-radius: 30px;
+  }
+
+  .cancel-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 30px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+
+    label {
+      font-weight: bold;
+      display: block;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+  }
+}

@@ -5,7 +5,7 @@
   text-align: center;
   font-family: fonts.$fontTitle;
   color: colors.$textColor-2;
-  background-color: colors.$backgroundColor-3;
+  background-color: colors.$backgroundColor-2;
 }
 
 ::ng-deep .contenair-auth {
@@ -13,7 +13,7 @@
   flex-direction: column;
   justify-content: space-evenly;
 
-  background-color: colors.$backgroundColor-3;
+  background-color: colors.$backgroundColor-2;
 
   ::ng-deep .form-auth {
     display: flex;
@@ -29,11 +29,14 @@
     ::ng-deep .btnSubmit-auth {
       width: 100%;
       font-family: fonts.$fontText;
+      font-size: large;
+      margin-top: 20px;
     }
   }
 
   ::ng-deep .btnChange-auth {
     text-align: center;
+    font-size: medium;
     font-family: fonts.$fontText;
   }
 
